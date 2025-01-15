@@ -1,0 +1,88 @@
+/* 
+--------------------------
+HEADER
+--------------------------
+ */
+
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+    
+
+    @media screen and (min-width: 992px) {
+        & {
+            flex-direction: column;
+        }
+        
+    }
+}
+
+#menu {
+    display: none;
+
+    /* hacer funcionar el checkboc -> hacer funcionar el menu hamburguesa */
+}
+
+/* 
+--------------------------
+NAVBAR
+--------------------------
+ */
+.nav-bar {
+    background-color: aquamarine;
+    /* display: none; */
+
+    &__nav-list { /* .nav-bar__nav-list */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+        border: 1px solid blue;
+    }
+
+    &__nav-item {
+        text-align: center;
+        background-color: pink;
+    }
+
+    &__nav-link {
+        display: block;
+        padding: 1rem 2rem;
+        background-color: purple;
+        text-decoration: none;
+    }
+}
+
+
+/* 
+--------------------------
+NAVBAR
+--------------------------
+ */
+.search-bar{
+    display: flex;
+    justify-content: space-around;
+    background-color: olivedrab;
+
+    &__logo-container {
+        width: 12rem;
+        height: 3.75rem;
+    }
+
+    &__form-container {
+        padding: 1rem;
+        background-color: gold;
+    }
+
+    &__form-label {
+        
+    }
+
+    &__form-search {
+        background-color: palevioletred;
+    }
+
+    &__carrito-container {
+        flex: 0 0 3rem; /* shorthand: buscar bien que es esto pero es como que define el tamaño */
+    }
+}

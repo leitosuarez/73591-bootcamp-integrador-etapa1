@@ -1,5 +1,22 @@
 @use '/src/sass/base/reset';
-@use '/src/sass/base/typografhy'
+@use '/src/sass/base/typografhy';
+@use '/src/sass/layout/header';
+
+.card-article{
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* vamos a trabajar con una metodologia de sass que se llama 7 en 1 
 ! base -> todos los estilos de inicio
