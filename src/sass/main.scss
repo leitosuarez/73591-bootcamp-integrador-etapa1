@@ -1,10 +1,8 @@
 @use '/src/sass/base/reset';
 @use '/src/sass/base/typografhy';
 @use '/src/sass/layout/header';
-
-.card-article{
-    overflow: hidden;
-}
+@use '/src/sass/pages/inicio';
+@use '/src/sass/components/cards';
 
 
 

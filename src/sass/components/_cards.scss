@@ -70,7 +70,7 @@
             flex-direction: column;
         }
 
-        &__image-container { 
+        & &__image-container { 
             clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
         }
 

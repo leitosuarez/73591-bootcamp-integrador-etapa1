@@ -21,7 +21,15 @@ HEADER
     display: none;
 
     /* hacer funcionar el checkboc -> hacer funcionar el menu hamburguesa */
+    &:checked + .nav-bar{    
+        display: block;     
+    }
+
+    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+        background-color: yellow;
+    } 
 }
+
 
 /* 
 --------------------------
@@ -30,7 +38,7 @@ NAVBAR
  */
 .nav-bar {
     background-color: aquamarine;
-    /* display: none; */
+    display: none; 
 
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
@@ -51,6 +59,19 @@ NAVBAR
         background-color: purple;
         text-decoration: none;
     }
+
+    @media  screen and (min-width: 992px) {
+        &{
+            display: block;
+        }
+
+        &__nav-list {
+            flex-direction: row;
+        }
+
+    }
+
+
 }
 
 
@@ -65,11 +86,15 @@ NAVBAR
     background-color: olivedrab;
 
     &__logo-container {
-        width: 12rem;
+        width: 8rem;
         height: 3.75rem;
     }
 
     &__form-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-grow: 1;
         padding: 1rem;
         background-color: gold;
     }
@@ -84,5 +109,54 @@ NAVBAR
 
     &__carrito-container {
         flex: 0 0 3rem; /* shorthand: buscar bien que es esto pero es como que define el tamaño */
+    }
+}
+
+/* 
+--------------------------
+menu-toogle
+--------------------------
+ */
+.menu-toogle {
+    display: block;
+    background-color: red;
+    flex: 0 0 3rem;
+    position: relative;
+    cursor: pointer;
+
+    &__label {
+        display: block;
+        height: 100%;
+        background-color: black;
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: #333;
+        height: 0.2rem;
+        position: absolute;
+        left: 0.5rem;
+        right: 0.5rem;
+    }
+
+    &__top-bread {
+        top: .8rem;
+    }
+
+    &__meat {
+        top: 50%; /* centrado verticalmente */
+        margin-top: -.1rem;
+    }
+
+    &__bottom-bread{
+        bottom: .8rem;
+    }
+
+    @media screen and (min-width:992px) {
+        & {
+            display: none;
+        }
     }
 }
