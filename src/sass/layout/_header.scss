@@ -86,11 +86,23 @@ SEARCHBAR
     justify-content: space-around;
     color: white;
     background-color: #18141c;
-    padding: .5rem 0;
+    padding: .6rem .2rem;
 
     &__logo-container {
-        width: 8rem;
-        height: 3.75rem;
+        width: 8.5rem;
+        /* height: 5rem; */
+        background-image: url('/src/imgs/logo.png');
+        background-position: center;
+        background-size:contain;
+        background-repeat: no-repeat;
+        
+    }
+
+    &__logo{
+        
+        
+        
+        
     }
 
     &__form-container {
@@ -100,6 +112,7 @@ SEARCHBAR
         flex-grow: 1;
         padding: 1rem;
         background-color: #18141c;
+        max-width: 60%;
         
     }
 
