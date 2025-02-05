@@ -27,7 +27,7 @@ HEADER
     }
 
     &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
-        background-color: yellow;
+        background-color:#d41c23;
     } 
 }
 
@@ -87,21 +87,15 @@ SEARCHBAR
     color: white;
     background-color: #18141c;
     padding: .6rem .2rem;
+    
 
     &__logo-container {
         width: 8.5rem;
-        /* height: 5rem; */
+        min-height:5rem ;       
         background-image: url('/src/imgs/logo.png');
         background-position: center;
         background-size:contain;
         background-repeat: no-repeat;
-        
-    }
-
-    &__logo{
-        
-        
-        
         
     }
 
@@ -134,6 +128,19 @@ SEARCHBAR
 
     &__carrito-container {
         flex: 0 0 3rem; /* shorthand: buscar bien que es esto pero es como que define el tamaño */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .7rem  ;
+        padding-top: 1rem;
+        
+        
+    }
+
+    &__carrito-container p {
+        font-size: 10px;
+        font-weight: 100;
     }
 
     &__form-submit{
@@ -148,6 +155,7 @@ SEARCHBAR
         min-width: 10%;
         
     }
+
 }
 
 /* 
@@ -165,14 +173,15 @@ menu-toogle
     &__label {
         display: block;
         height: 100%;
-        background-color: black;
+        background-color: #18141c;
     }
 
     &__top-bread,
     &__meat,
     &__bottom-bread {
         display: block;
-        background-color: #333;
+        background-color: white;
+        border-radius: 1px;
         height: 0.2rem;
         position: absolute;
         left: 0.5rem;
@@ -180,16 +189,18 @@ menu-toogle
     }
 
     &__top-bread {
-        top: .8rem;
+        top: 1.4rem;
     }
 
     &__meat {
         top: 50%; /* centrado verticalmente */
         margin-top: -.1rem;
+        
     }
 
     &__bottom-bread{
-        bottom: .8rem;
+        bottom: 1.4rem;
+        
     }
 
     @media screen and (min-width:992px) {
