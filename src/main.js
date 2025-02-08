@@ -69,7 +69,11 @@ const start3 = ()=> { //tercera opcion (LA MAS OPTIMA) ya que se agregan los ele
 
   const fragment = new DocumentFragment();
 
+  let cantProductos = 0
+  let sectionCardsHeader = document.querySelector('.section-cards__header')
   productos.forEach(prod => {
+
+    cantProductos += 1
 
     const card = document.createElement('div')
     card.classList.add('card')
@@ -104,6 +108,10 @@ const start3 = ()=> { //tercera opcion (LA MAS OPTIMA) ya que se agregan los ele
     fragment.appendChild(card)
 
   })
+
+  const parrafoSectionCardsHeader = document.createElement('p')
+  sectionCardsHeader.appendChild(parrafoSectionCardsHeader)
+  parrafoSectionCardsHeader.textContent = `Se encontraron ${cantProductos} productos`
 
   contenedorProductos.appendChild(fragment)
   
