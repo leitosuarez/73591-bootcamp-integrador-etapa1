@@ -1,5 +1,5 @@
 .card {
-    min-width: 400px;
+    min-width: 450px;
     max-width: 500px;
     height: 200px;
     border-top-left-radius: 5px;
@@ -27,30 +27,42 @@
     }
 
     &:nth-child(5n + 1) {
-        background-image: linear-gradient(orange, yellow, blue);
+        background: rgb(184,24,35);
+        background: linear-gradient(90deg, rgba(184,24,35,1) 40%, rgba(212,28,35,1) 100%);
     }
 
     &:nth-child(5n + 2) {
-        background-image: linear-gradient(red, yellow, blue);
+        background: rgb(184,24,35);
+        background: linear-gradient(90deg, rgba(184,24,35,1) 40%, rgba(212,28,35,1) 100%);
     }
 
     &:nth-child(5n + 3) {
-        background-image: linear-gradient(aqua, yellow, blueviolet);
+        background: rgb(184,24,35);
+        background: linear-gradient(90deg, rgba(184,24,35,1) 40%, rgba(212,28,35,1) 100%);
     }
 
     &:nth-child(5n + 4) {
-        background-image: linear-gradient(lightblue, yellow, green);
+        background: rgb(184,24,35);
+        background: linear-gradient(90deg, rgba(184,24,35,1) 40%, rgba(212,28,35,1) 100%);
     }
 
     &:nth-child(5n + 5) {
-        background-image: linear-gradient(pink, violet, blueviolet);
+        background: rgb(184,24,35);
+        background: linear-gradient(90deg, rgba(184,24,35,1) 40%, rgba(212,28,35,1) 100%);
     }
 
     &__image-container {
-        min-width: 150px;
+        min-width: 200px;
+        max-width: 250px;
         height: 200px;
         overflow: hidden;
         clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%); // estado inicial
+    }
+
+    &__content {
+        min-width: 150px;
+        max-width: 200px;
+        
     }
 
     &:hover &__image-container, &:focus &__image-container {
@@ -70,8 +82,14 @@
             flex-direction: column;
         }
 
-        & &__image-container { 
+        &__image-container { 
             clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+            max-width: none;
+        }
+
+        &__content {
+            min-width: none;
+            max-width: none;
         }
 
         &:hover &__image-container, &:focus &__image-container {
