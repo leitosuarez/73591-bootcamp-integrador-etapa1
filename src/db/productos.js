@@ -3,56 +3,77 @@ const productos = [
         id: 1,
         nombre: 'BMW Strom 250cc',
         foto: 'imgs/bmw strom 250.jpg',
-        descripcion: 'BMW Strom 250cc', precio: 6000
+        descripcion: 'Trail compacta, perfecta para aventuras urbanas y off-road ligeras.', precio: `$${7500}.00`
     },
 
     {
         id: 2,
-        nombre: 'Dominar 400cc 2023',
+        nombre: 'Bajaj Dominar 400cc 2023',
         foto: 'imgs/dominar 400.png',
-        descripcion: 'Dominar 400cc 2023', precio: 7500
+        descripcion: 'Deportiva y touring, ideal para viajes largos con excelente potencia y confort.', precio: `$${9700}.00`
     },
 
     {
         id: 3,
         nombre: 'Honda Twister CB 250cc',
         foto: 'imgs/bmw strom 250.jpg',
-        descripcion: 'Honda Twister CB 250cc', precio: 5000
+        descripcion: 'Combinación de potencia y estilo para uso urbano.', precio: `$${5500}.00`
     },
 
     {
         id: 4,
         nombre: 'Kawasaki Z400',
         foto: 'imgs/bmw strom 250.jpg',
-        descripcion: 'Kawasaki z400', precio: 7000
+        descripcion: 'Naked deportiva, ligera y con gran maniobrabilidad.', precio: `$${11000}.00`
     },
 
     {
         id: 5,
         nombre: 'Rowser NS Bajaj 200 2024',
         foto: 'imgs/bmw strom 250.jpg',
-        descripcion: 'Rowser ns bajaj 200 2024', precio: 4800
+        descripcion: 'Equilibrio entre potencia, diseño y economía.', precio: `$${6000}.00`
     },
 
     {
         id: 6,
         nombre: 'Yamaha FZ 250cc',
         foto: 'imgs/bmw strom 250.jpg',
-        descripcion: 'BMW Strom 250cc', precio: 5200
+        descripcion: ' Moto versátil y moderna, perfecta para el día a día.', precio: `$${6500}.00`
     },
 
     {
         id: 7,
         nombre: 'Yamaha R6',
         foto: 'imgs/yamaha r6.jpg',
-        descripcion: 'Yamaha R6', precio: 16000
+        descripcion: 'Deportiva pura con tecnología de competición.', precio: `$${20000}.00`
     },
 
     {
         id: 8,
         nombre: 'Yamaha R1',
         foto: 'imgs/Yamaha-YZF-R1-2020-3.jpg',
-        descripcion: 'Yamaha R1', precio: 25000
+        descripcion: 'Innovación y velocidad para los amantes de las carreras.', precio: `$${22000}.00`
+    },
+
+    {
+        id: 9,
+        nombre: 'Kawasaki Ninja H2R',
+        foto: 'public/imgs/Kawasaki ninja h2r.webp',
+        descripcion: 'Superdeportiva de alto rendimiento, diseñada para velocidad.', precio: `$${21000}.00`
+    },
+
+    {
+        id: 10,
+        nombre: 'Yamaha XTZ 250cc',
+        foto: 'imgs/yamaha xtz.webp',
+        descripcion: 'Ligera y resistente, ideal para terrenos difíciles.', precio: `$${8500}.00`
+    },
+
+    {
+        id: 11,
+        nombre: 'Honda XR 250 Tornado',
+        foto: 'imgs/honda-xr-250-tornado.webp',
+        descripcion: 'Una moto doble propósito, ágil y resistente, perfecta para aventuras en ciudad y off-road.', precio: `$${9000}.00`
     },
 
 ]

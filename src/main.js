@@ -97,6 +97,9 @@ const start3 = ()=> { //tercera opcion (LA MAS OPTIMA) ya que se agregan los ele
     const descripcion = document.createElement('p')
     descripcion.textContent = prod.descripcion
     cardDescription.appendChild(descripcion)
+    const precio = document.createElement('span')
+    precio.textContent = prod.precio
+    cardContent.appendChild(precio)
 
     fragment.appendChild(card)
 
