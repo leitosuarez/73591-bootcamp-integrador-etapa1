@@ -58,7 +58,7 @@ const productos = [
     {
         id: 9,
         nombre: 'Kawasaki Ninja H2R',
-        foto: 'public/imgs/Kawasaki ninja h2r.webp',
+        foto: 'imgs/kawasaki ninja h2r.webp',
         descripcion: 'Superdeportiva de alto rendimiento, diseñada para velocidad.', precio: `$${21000}.00`
     },
 
