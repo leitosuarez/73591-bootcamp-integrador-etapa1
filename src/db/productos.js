@@ -16,28 +16,28 @@ const productos = [
     {
         id: 3,
         nombre: 'Honda Twister CB 250cc',
-        foto: 'imgs/bmw strom 250.jpg',
+        foto: 'imgs/honda twister cb 250.jpeg',
         descripcion: 'Combinación de potencia y estilo para uso urbano.', precio: `$${5500}.00`
     },
 
     {
         id: 4,
         nombre: 'Kawasaki Z400',
-        foto: 'imgs/bmw strom 250.jpg',
+        foto: 'imgs/kawasaki z400.webp',
         descripcion: 'Naked deportiva, ligera y con gran maniobrabilidad.', precio: `$${11000}.00`
     },
 
     {
         id: 5,
         nombre: 'Rowser NS Bajaj 200 2024',
-        foto: 'imgs/bmw strom 250.jpg',
+        foto: 'imgs/rowser ns 200 2024.jpg',
         descripcion: 'Equilibrio entre potencia, diseño y economía.', precio: `$${6000}.00`
     },
 
     {
         id: 6,
         nombre: 'Yamaha FZ 250cc',
-        foto: 'imgs/bmw strom 250.jpg',
+        foto: 'imgs/yamaha fz 250.webp',
         descripcion: ' Moto versátil y moderna, perfecta para el día a día.', precio: `$${6500}.00`
     },
 
@@ -64,17 +64,25 @@ const productos = [
 
     {
         id: 10,
+        nombre: 'CFMOTO 450SR',
+        foto: 'imgs/cf-moto-600.webp',
+        descripcion: 'El freno trasero es adecuado, aunque no demasiado sensible, y todo el sistema está respaldado por un sistema ABS conmutable.', precio: `$${19200}.00`
+    },
+
+    {
+        id: 11,
         nombre: 'Yamaha XTZ 250cc',
         foto: 'imgs/yamaha xtz.webp',
         descripcion: 'Ligera y resistente, ideal para terrenos difíciles.', precio: `$${8500}.00`
     },
 
     {
-        id: 11,
+        id: 12,
         nombre: 'Honda XR 250 Tornado',
         foto: 'imgs/honda-xr-250-tornado.webp',
         descripcion: 'Una moto doble propósito, ágil y resistente, perfecta para aventuras en ciudad y off-road.', precio: `$${9000}.00`
     },
+
 
 ]
 
