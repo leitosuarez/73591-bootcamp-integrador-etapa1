@@ -29,4 +29,4 @@ npm run dev
 
 Nombre: Leonel Suarez
 github: https://github.com/leitosuarez/73591-bootcamp-integrador-etapa1.git
-netlify:
+netlify: https://ecommerce-integrador-leo.netlify.app/
