@@ -6,7 +6,7 @@
     justify-content: center;
     gap: 1rem;
     padding: .4rem;
-    border: 1px solid blue;
+    
 }
 
 /* Formulario de contacto - formulario */
@@ -16,6 +16,8 @@
     -webkit-box-shadow: 0px 1px 13px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 13px 0 rgba(0,0,0,0.75);
     max-width: 900px;
+    min-height: 800px;
+    
 
     &__header {
         text-align: center;
@@ -40,8 +42,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: .7rem;
+        gap: 1rem;
         padding: 1.7rem 1.5rem;
+        padding-top: 3.5rem;
     }
 
     &__input {
@@ -83,24 +86,31 @@
     }
 
     &__button {
-        width: 125px;
-        height: 37px;
+        /* width: 125px;
+        height: 37px; */
+        text-align: center;
         color: white;
         background-color: #d41c23;
         border: none;
         border-radius: 1rem;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 800;
-        margin-top: .7rem;
-        padding: .4rem .8rem;
+        margin-top: 2.4rem;
+        /* padding: .6rem .8rem; */
+        padding: .9rem 1.6rem;
         box-shadow: 1px 3px 8px -1px rgba(212,28,35,0.75);
         -webkit-box-shadow: 1px 3px 8px -1px rgba(212,28,35,0.75);
         -moz-box-shadow: 1px 3px 8px -1px rgba(212,28,35,0.75);
     }
+
+    &__button:hover {
+        cursor: pointer;
+        background-color: #990308;
+    }
     
 }
 
-/* Formulario de contacto - formulario */
+/* Formulario de contacto - info */
 .form-info {
     display: flex;
     flex-direction: column;
@@ -110,6 +120,7 @@
     -webkit-box-shadow: 0px 1px 13px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 13px 0 rgba(0,0,0,0.75);
     max-width: 900px;
+    min-height: 800px;
 
     &__info-header {
         padding: 2rem;
@@ -135,6 +146,10 @@
         font-size: 17px;
     }
 
+    &__map {
+        height: 546px;
+    }
+
     @media  screen and (min-width: 1300px) {
         &__info-header {
             min-height: 156px;
@@ -142,23 +157,43 @@
             grid-template-columns: repeat(3, 1fr); /* 3 columnas */
             grid-template-rows: 1fr; /* Solo 1 fila */
         }
+
+        &__map {
+            height: 644px;
+        }
+
+    }
+
+}
+
+/* Responsive */
+@media  screen and (min-width: 992px) {
+    .form-container {
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     justify-items: center;
+     
+     
+     
+    } 
+    .form-contact, .form-info {
+     width: 100%;
     }
 }
 
-@media  screen and (min-width: 992px) {
-       .form-container {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
-        
-        
-       } 
+@media screen and (min-width: 1320px){
+    .form-container {
+        padding: .4rem 4rem;
+    }
 
-       .form-contact, .form-info {
-        width: 100%;
-       }
+    .form-contact, .form-info {
+        min-height: 800px;
+    }
 
 }
+
+
+
 
 
 
