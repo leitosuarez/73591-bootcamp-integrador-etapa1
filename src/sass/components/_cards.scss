@@ -1,5 +1,11 @@
 .cards-container {
-    padding-bottom: 2rem;
+    padding: 2.5rem 0;
+}
+
+@media  screen and (min-width: 992px){
+    .cards-container {
+        padding: 2.5rem;
+    }
 }
 
 .section-cards{

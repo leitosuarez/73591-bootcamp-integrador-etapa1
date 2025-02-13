@@ -7,13 +7,13 @@ HEADER
 .main-header {
     display: flex;
     flex-direction: column-reverse;
-    border-bottom: 1px solid #d41c23;
+    
     
     
 
     @media screen and (min-width: 992px) {
         & {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
         
     }
@@ -46,8 +46,11 @@ NAVBAR
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         list-style-type: none;
+        padding: 1rem 9rem;
+        
+        
         
     }
 
@@ -57,32 +60,37 @@ NAVBAR
     }
 
     &__nav-link {
+        font-size: 18px;
         display: block;
         padding: 1rem 2rem;
         background-color: #18141c;
         color: #d41c23;
         text-decoration: none;
-        border-bottom: 1px solid #18141c;
+        border-bottom: 3px solid #18141c;
         transition: border .3s ease-in-out;
+        
         
         
         
         &:hover {
             color: #990308;
         }
+
         
         /* hover de los nav-link y tamaño de los mismos, funcionales solo en desktop */
         @media  screen and (min-width: 992px) {
 
             &{
-                padding: 1rem 2rem .6rem 2rem;
+                padding: 1rem 2rem .6rem 2rem; 
             }
             &:hover {
-                color: #d41c23;
-                border-bottom: 1px solid  #d41c23;
+                color: #990308;
+                border-bottom: 3px solid  #990308;
+                
             }
         }
         }
+
         /*  */
 
     @media  screen and (min-width: 992px) {
