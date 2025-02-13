@@ -1,3 +1,7 @@
+.cards-container {
+    padding-bottom: 2rem;
+}
+
 .section-cards{
     border-bottom: 1px solid gray;
     margin-bottom: .5rem;
@@ -17,8 +21,8 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     overflow: hidden;
-
-    background-color: orange;
+    background-color: #18141c;
+    
     box-shadow: 0 7px 8px 0 rgba(0,0,0,0.5);
     transition: transform .2s; //No puede ser all!
     
@@ -48,7 +52,7 @@
         
     }
 
-    &:nth-child(5n + 1) {
+    /* &:nth-child(5n + 1) {
         background: rgb(184,24,35);
         background: linear-gradient(90deg, rgba(184,24,35,1) 40%, rgba(212,28,35,1) 100%);
     }
@@ -71,11 +75,13 @@
     &:nth-child(5n + 5) {
         background: rgb(184,24,35);
         background: linear-gradient(90deg, rgba(184,24,35,1) 40%, rgba(212,28,35,1) 100%);
-    }
-
+    } */
+ 
     &__image-container {
         min-width: 250px;
         max-width: 250px;
+        background-position: center;
+        background-size: contain;
         height: 200px;
         overflow: hidden;
         clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%); // estado inicial
@@ -87,7 +93,7 @@
     &__content {
         min-width: 150px;
         max-width: 200px;
-        color: #18141c;
+        color: white;
         
     }
 
@@ -97,7 +103,7 @@
         bottom: .7rem;
         font-size: 1.3rem;
         font-weight: 900;
-        color: white;
+        color: #d41c23;
     }
 
     &__content p {
