@@ -26,3 +26,7 @@ npm i sass-embedded -D
 ```sh
 npm run dev
 ```
+
+Nombre: Leonel Suarez
+github: https://github.com/leitosuarez/73591-bootcamp-integrador-etapa1.git
+netlify:

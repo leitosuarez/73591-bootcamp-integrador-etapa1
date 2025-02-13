@@ -7,6 +7,7 @@ HEADER
 .main-header {
     display: flex;
     flex-direction: column-reverse;
+    border-bottom: 1px solid #d41c23;
     
     
 
@@ -28,6 +29,7 @@ HEADER
 
     &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
         background-color:#d41c23;
+    
     } 
 }
 
@@ -60,8 +62,15 @@ NAVBAR
         background-color: #18141c;
         color: #d41c23;
         text-decoration: none;
+        border-bottom: 1px solid #18141c;
+        transition: border .3s ease-in-out;
         
-
+        
+        
+        &:hover {
+            color: #990308;
+        }
+        
         /* hover de los nav-link y tamaño de los mismos, funcionales solo en desktop */
         @media  screen and (min-width: 992px) {
 
@@ -69,6 +78,7 @@ NAVBAR
                 padding: 1rem 2rem .6rem 2rem;
             }
             &:hover {
+                color: #d41c23;
                 border-bottom: 1px solid  #d41c23;
             }
         }
@@ -85,6 +95,8 @@ NAVBAR
         }
 
     }
+
+    
 
     
     
@@ -170,7 +182,7 @@ SEARCHBAR
     &__form-submit{
         background-color: #d41c23;
         color: white;
-        font-size: .7rem;
+        font-size: .9rem;
         font-weight: 600;
         border: none;
         border-top-right-radius: 1rem;
@@ -178,6 +190,7 @@ SEARCHBAR
         padding: 0 1rem;
         min-width: 10%;
         cursor: pointer;
+        transition: ease .3s background-color;
         
     }
 

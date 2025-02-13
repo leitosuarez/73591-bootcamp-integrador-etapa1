@@ -66,7 +66,7 @@ const productos = [
         id: 10,
         nombre: 'CFMOTO 450SR',
         foto: 'imgs/cf-moto-600.webp',
-        descripcion: 'El freno trasero es adecuado, aunque no demasiado sensible, y todo el sistema está respaldado por un sistema ABS conmutable.', precio: `$${19200}.00`
+        descripcion: 'Magnificiencia estetica, sistema del motor respaldado por un sistema ABS conmutable.', precio: `$${19200}.00`
     },
 
     {
