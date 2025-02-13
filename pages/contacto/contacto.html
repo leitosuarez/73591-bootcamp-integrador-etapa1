@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <header class="main-header">
+        <input type="checkbox" id="menu">
+  
+        <nav class="nav-bar">
+          <ul class="nav-bar__nav-list">
+            <li class="nav-bar__nav-item">
+              <a href="/index.html" class="nav-bar__nav-link">Inicio</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="" class="nav-bar__nav-link">Alta</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="/pages/nosotros/nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="/src/pages/contacto.html" class="nav-bar__nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav> <!-- nav-bar -->
+  
+        <div class="search-bar">
+          <div class="search-bar__logo-container"></div>
+          <form action="#" class="search-bar__form-container">
+            <label for="busqueda" class="search-bar__form-label"><i class="fa-solid fa-magnifying-glass fa-xl"></i></label>
+            <input type="search" id="busqueda" class="search-bar__form-search" placeholder="Buscar Aqui">
+            <button type="submit" class="search-bar__form-submit">Buscar</button>
+          </form>
+          <div class="search-bar__carrito-container"><i class="fa-solid fa-cart-shopping fa-xl"></i><p>Tu carro</p></div>
+          <div class="menu-toogle">
+            <label for="menu" class="menu-toogle__label">
+              <span class="menu-toogle__top-bread"></span>
+              <span class="menu-toogle__meat"></span>
+              <span class="menu-toogle__bottom-bread"></span>
+            </label> <!-- menu-toogle -->
+          </div>
+        </div> <!-- .search-bar -->
+  
+      </header>
+
+      <main>
+        <section class="form-container">
+        
+          <div class="form-contact">
+
+            <div class="form-contact__header">
+              <h2>Contactate con nosotros</h2>
+            </div>
+
+              <form action="" class="form-contact__form">
+                <div class="form-contact__input">
+                  <label for=""><i class="fa-regular fa-user" style="color: #c9c9c9;"></i></label>
+                  <input type="text" placeholder="Nombre completo">
+                </div>
+
+                <div class="form-contact__input">
+                  <label for=""><i class="fa-regular fa-envelope" style="color: #c9c9c9;"></i></label>
+                  <input type="email" placeholder="Eg-example@email.com">
+                </div>
+
+                <div class="form-contact__input">
+                  <label for=""><i class="fa-solid fa-mobile-screen-button" style="color: #c9c9c9;"></i></label>
+                  <input type="text" placeholder="Eg +1 800 000000">
+                </div>
+
+                <div class="form-contact__input">
+                  <label for=""><i class="fa-regular fa-comment" style="color: #c9c9c9;"></i></label>
+                  <textarea name="" id="" placeholder="Tus comentarios..."></textarea>
+                </div>
+
+                <button type="submit" class="form-contact__button">Enviar Ahora</button>
+              </form> <!-- form-contact -->
+
+          </div>
+
+          <div class="form-info">
+
+            <div class="form-info__info-header">
+
+                <div class="form-info__item">
+                  <div>
+                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                    <span>Telefono</span>
+                  </div>
+                  <p>+54 351-8080574</p>
+                </div>
+
+                <div class="form-info__item">
+                  <div>
+                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                    <span>Ubicación</span>
+                  </div>
+                  <p>Alta Córdoba, Córdoba Capital</p>
+                </div>
+
+                <div class="form-info__item">
+                  <div>
+                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                    <span>Correo</span>
+                  </div>
+                  <p>twkmotores@gmail.com</p>
+                </div> 
+
+            </div>  
+
+            <div class="form-info__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5728.365020972863!2d-64.1803783201539!3d-31.38363455071517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432984492fed55b%3A0xbe137899630e92c0!2sInstituto%20Atl%C3%A9tico%20Central%20C%C3%B3rdoba%20(I.A.C.C.)!5e0!3m2!1ses-419!2sar!4v1739410562866!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div> <!-- form-info -->
+          
+
+        </section> <!-- form-container -->
+
+      </main>
+
+
+      <script type="module" src="/pages/contacto/contacto.js"></script>
+</body>
+</html>
